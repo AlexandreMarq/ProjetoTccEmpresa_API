@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using ProjetoTccEmpresa_API.Application.DTOs.Alimentacao.Requests.Search;
 using ProjetoTccEmpresa_API.Application.Interfaces;
 
 namespace ProjetoTccEmpresa_API.Controllers
