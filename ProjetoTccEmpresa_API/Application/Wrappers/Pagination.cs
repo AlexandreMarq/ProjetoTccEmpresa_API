@@ -1,4 +1,4 @@
-﻿namespace ProjetoTccEmpresa_API.Domain.Wrappers
+﻿namespace ProjetoTccEmpresa_API.Application.Wrappers
 {
     public class Pagination
     {

@@ -11,16 +11,19 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="Dapper" Version="2.1.35" />
+    <PackageReference Include="FluentValidation" Version="11.11.0" />
     <PackageReference Include="MediatR" Version="12.4.1" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
+    <PackageReference Include="Polly" Version="8.5.0" />
+    <PackageReference Include="Polly.Contrib.WaitAndRetry" Version="1.1.1" />
+    <PackageReference Include="Serilog" Version="4.2.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="7.2.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="02 - Domain\Entities\" />
-    <Folder Include="02 - Domain\Interfaces\" />
-    <Folder Include="03 - Infrastructure\Data\" />
-    <Folder Include="04 - Application\Validations\" />
+    <Folder Include="Application\Validations\" />
   </ItemGroup>
 
 </Project>
