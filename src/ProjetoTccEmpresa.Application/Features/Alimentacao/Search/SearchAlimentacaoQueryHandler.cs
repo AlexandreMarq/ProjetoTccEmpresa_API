@@ -1,12 +1,13 @@
 ﻿using AutoMapper;
 using MediatR;
-using ProjetoTccEmpresa_API.Domain.Interfaces;
-using ProjetoTccEmpresa_API.Domain.Wrappers;
-using ProjetoTccEmpresa_API.Domain.Entities.Validator;
+using ProjetoTccEmpresa_API.Application.Features.Alimentacao.Search;
+using ProjetoTccEmpresa.Domain.Entities.Validator;
+using ProjetoTccEmpresa.Domain.Interfaces;
+using ProjetoTccEmpresa.Domain.Wrappers;
 
-namespace ProjetoTccEmpresa_API.Application.Features.Alimentacao.Search
+namespace ProjetoTccEmpresa.Application.Features.Alimentacao.Search
 {
-    public class SearchAlimentacaoQueryHandler: ValidatorBase, IRequestHandler<SearchAlimentacaoQuery, Pagination<IEnumerable<Domain.Models.Alimentacao>>>
+    public class SearchAlimentacaoQueryHandler : ValidatorBase, IRequestHandler<SearchAlimentacaoQuery, Pagination<IEnumerable<Domain.Models.Alimentacao>>>
     {
         private readonly IAlimentacaoRepository _repository;
         private readonly IMapper _mapper;

@@ -1,8 +1,8 @@
-﻿using ProjetoTccEmpresa_API.Application.DTOs.Alimentacao.Requests.Search;
-using ProjetoTccEmpresa_API.Domain.Models;
-using ProjetoTccEmpresa_API.Domain.Wrappers;
+﻿using ProjetoTccEmpresa.Application.DTOs.Alimentacao.Requests.Search;
+using ProjetoTccEmpresa.Domain.Models;
+using ProjetoTccEmpresa.Domain.Wrappers;
 
-namespace ProjetoTccEmpresa_API.Application.Interfaces
+namespace ProjetoTccEmpresa.Application.Interfaces
 {
     public interface IAlimentacaoService
     {

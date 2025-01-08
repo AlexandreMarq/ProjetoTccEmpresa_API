@@ -1,13 +1,13 @@
 ﻿using FluentValidation.Results;
 using FluentValidation;
 
-namespace ProjetoTccEmpresa_API.Domain.Entities.Validator
+namespace ProjetoTccEmpresa.Domain.Entities.Validator
 {
     public class ValidatorBase
     {
         protected async Task Notify(ValidationResult validationResult)
         {
-            foreach ( ValidationFailure error in validationResult.Errors)
+            foreach (ValidationFailure error in validationResult.Errors)
             {
                 await Notify(error.ErrorMessage);
             }

@@ -1,4 +1,4 @@
-﻿namespace ProjetoTccEmpresa_API.Domain.Wrappers
+﻿namespace ProjetoTccEmpresa.Domain.Wrappers
 {
     public class Pagination<T>
     {
@@ -14,7 +14,7 @@
             PageSize = pageSize;
             TotalRecords = totalRecords;
             Records = records;
-            TotalPages = (totalRecords % TotalPages == 0) ? (totalRecords / pageSize) : (totalRecords / pageSize);
+            TotalPages = totalRecords % TotalPages == 0 ? totalRecords / pageSize : totalRecords / pageSize;
         }
     }
 }

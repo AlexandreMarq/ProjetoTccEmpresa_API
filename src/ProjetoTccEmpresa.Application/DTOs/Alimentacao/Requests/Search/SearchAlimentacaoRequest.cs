@@ -1,6 +1,6 @@
-﻿using ProjetoTccEmpresa_API.Application.Wrappers;
+﻿using ProjetoTccEmpresa.Application.Wrappers;
 
-namespace ProjetoTccEmpresa_API.Application.DTOs.Alimentacao.Requests.Search
+namespace ProjetoTccEmpresa.Application.DTOs.Alimentacao.Requests.Search
 {
     public class SearchAlimentacaoRequest : Pagination
     {

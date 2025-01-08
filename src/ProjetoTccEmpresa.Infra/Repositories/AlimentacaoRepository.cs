@@ -1,12 +1,12 @@
 ﻿using Dapper;
-using ProjetoTccEmpresa_API.Domain.Wrappers;
-using ProjetoTccEmpresa_API.Domain.Interfaces;
-using ProjetoTccEmpresa_API.Domain.Models;
 using ProjetoTccEmpresa_API.Infrastructure.Data.Context;
 using System.Data.SqlClient;
 using System.Data;
 using ProjetoTccEmpresa_API.Infrastructure.Data.Core.Extensions;
 using Microsoft.Extensions.Configuration;
+using ProjetoTccEmpresa.Domain.Interfaces;
+using ProjetoTccEmpresa.Domain.Models;
+using ProjetoTccEmpresa.Domain.Wrappers;
 
 namespace ProjetoTccEmpresa_API.Infrastructure.Repositories
 {

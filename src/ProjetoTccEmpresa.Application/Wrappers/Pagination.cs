@@ -1,8 +1,8 @@
-﻿namespace ProjetoTccEmpresa_API.Application.Wrappers
+﻿namespace ProjetoTccEmpresa.Application.Wrappers
 {
     public class Pagination
     {
-        public int PageNumber {  get; set; }
+        public int PageNumber { get; set; }
         public int PageSize { get; set; }
     }
 }

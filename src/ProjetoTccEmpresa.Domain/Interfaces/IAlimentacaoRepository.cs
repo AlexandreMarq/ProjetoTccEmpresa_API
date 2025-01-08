@@ -1,7 +1,7 @@
-﻿using ProjetoTccEmpresa_API.Domain.Models;
-using ProjetoTccEmpresa_API.Domain.Wrappers;
+﻿using ProjetoTccEmpresa.Domain.Models;
+using ProjetoTccEmpresa.Domain.Wrappers;
 
-namespace ProjetoTccEmpresa_API.Domain.Interfaces
+namespace ProjetoTccEmpresa.Domain.Interfaces
 {
     public interface IAlimentacaoRepository
     {

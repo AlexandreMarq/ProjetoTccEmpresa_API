@@ -1,12 +1,12 @@
 ﻿using AutoMapper;
 using MediatR;
-using ProjetoTccEmpresa_API.Application.DTOs.Alimentacao.Requests.Search;
-using ProjetoTccEmpresa_API.Application.Features.Alimentacao.Search;
-using ProjetoTccEmpresa_API.Application.Interfaces;
-using ProjetoTccEmpresa_API.Domain.Wrappers;
-using ProjetoTccEmpresa_API.Domain.Models;
+using ProjetoTccEmpresa.Application.DTOs.Alimentacao.Requests.Search;
+using ProjetoTccEmpresa.Application.Interfaces;
+using ProjetoTccEmpresa.Application.Features.Alimentacao.Search;
+using ProjetoTccEmpresa.Domain.Models;
+using ProjetoTccEmpresa.Domain.Wrappers;
 
-namespace ProjetoTccEmpresa_API.Application.Services
+namespace ProjetoTccEmpresa.Application.Services
 {
     public class AlimentacaoService : IAlimentacaoService
     {

@@ -1,4 +1,4 @@
-﻿namespace ProjetoTccEmpresa_API.Domain.Models
+﻿namespace ProjetoTccEmpresa.Domain.Models
 {
     public class Alimentacao
     {
