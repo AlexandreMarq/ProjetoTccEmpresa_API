@@ -6,7 +6,7 @@ using ProjetoTccEmpresa_API.Infrastructure.Data.Context;
 using System.Data.SqlClient;
 using System.Data;
 using ProjetoTccEmpresa_API.Infrastructure.Data.Core.Extensions;
-using Microsoft.Win32;
+using Microsoft.Extensions.Configuration;
 
 namespace ProjetoTccEmpresa_API.Infrastructure.Repositories
 {
