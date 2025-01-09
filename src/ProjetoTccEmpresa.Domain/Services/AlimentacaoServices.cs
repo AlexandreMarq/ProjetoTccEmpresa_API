@@ -2,7 +2,7 @@
 using ProjetoTccEmpresa.Domain.Bases;
 using ProjetoTccEmpresa.Domain.DTO;
 using ProjetoTccEmpresa.Domain.Interfaces;
-using ProjetoTccEmpresa.Domain.Interfaces.Repositories;
+using ProjetoTccEmpresa.Domain.Interfaces.Repositories.Empresa;
 using ProjetoTccEmpresa.Domain.Interfaces.Services;
 
 namespace ProjetoTccEmpresa.Domain.Services

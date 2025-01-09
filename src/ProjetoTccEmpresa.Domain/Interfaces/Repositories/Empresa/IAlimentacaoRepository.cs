@@ -1,6 +1,6 @@
 ﻿using ProjetoTccEmpresa.Domain.DTO;
 
-namespace ProjetoTccEmpresa.Domain.Interfaces.Repositories
+namespace ProjetoTccEmpresa.Domain.Interfaces.Repositories.Empresa
 {
     public interface IAlimentacaoRepository
     {
