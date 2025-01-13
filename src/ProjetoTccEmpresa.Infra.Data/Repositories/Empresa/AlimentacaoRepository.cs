@@ -1,22 +1,37 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using Dapper;
+using Microsoft.Extensions.Configuration;
 using ProjetoTccEmpresa.Domain.DTO;
 using ProjetoTccEmpresa.Domain.Interfaces;
 using ProjetoTccEmpresa.Domain.Interfaces.Repositories.Empresa;
 using ProjetoTccEmpresa.Infra.Data.Context;
+using System.Collections;
+using System.Data.SqlClient;
 
 namespace ProjetoTccEmpresa.Infra.Data.Repositories.Empresa
 {
-    public class AlimentacaoRepository : BaseRepository<EmpresaContext, IAlimentacaoRepository>
+    public class AlimentacaoRepository : IAlimentacaoRepository
     {
         public IConfiguration _configuration;
-        public AlimentacaoRepository(EmpresaContext context, IConfiguration configuration) : base(context)
+        public AlimentacaoRepository(IConfiguration configuration) 
         {
             _configuration = configuration;
         }
 
-        public Task<IResult<IEnumerable<AlimentacaoDTO>>> GetFonteAlimentacao()
+        public IEnumerable<AlimentacaoDTO> GetFonteAlimentacao()
         {
-            return null;
+            using (var sqlConnection = new SqlConnection(_configuration.GetConnectionString(nameof(EmpresaContext))))
+            {
+                string query = @"
+                                SELECT id_alimentacao as AlimentacaoId
+                                    , alimentacao as Alimentacao
+                                FROM alimentacao(nolock)
+                ";
+
+                return sqlConnection.Query<AlimentacaoDTO>(query, commandTimeout: 300);
+            }
+
+
+            
         }
     }
 }

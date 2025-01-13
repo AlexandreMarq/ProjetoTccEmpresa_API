@@ -1,26 +1,27 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using ProjetoTccEmpresa.Application.DTOs.Alimentacao.Requests.Search;
-using ProjetoTccEmpresa.Application.Interfaces;
-using System.Net;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
+using ProjetoTccEmpresa.Domain.DTO;
+using ProjetoTccEmpresa.Domain.Interfaces;
+using ProjetoTccEmpresa.Domain.Interfaces.Services;
+using ProjetoTccEmpresa_API.Configurations;
 
 namespace ProjetoTccEmpresa_API.Controllers
 {
     [Route("api/alimentacao")]
-    public class AlimentacaoController 
+    public class AlimentacaoController : BaseController
     {
-        private readonly IAlimentacaoService _service;
-
-        public AlimentacaoController(IAlimentacaoService service)
+        public AlimentacaoController(IMapper mapper) : base(mapper)
         {
-            service = _service;
+
         }
 
         [HttpGet]
-        public async Task<IActionResult> SearchAlimentacao([FromQuery] SearchAlimentacaoRequest request)
+        [ProducesResponseType(typeof(IEnumerable<AlimentacaoDTO>), StatusCodes.Status200OK)]
+        public async Task<IActionResult> SearchAlimentacao([FromQuery] IAlimentacaoServices alimentacaoServices)
         {
-            var alimentacao = await _service.SearchAlimentacao(request);
+            IResult<IEnumerable<AlimentacaoDTO>> result = await alimentacaoServices.GetFonteAlimentacao();
 
-            return null;
+            return await GetResult<IEnumerable<AlimentacaoDTO>, IEnumerable<AlimentacaoDTO>>(result);
         }
 
     }

@@ -20,9 +20,11 @@ namespace ProjetoTccEmpresa.Domain.Services
 
         public async Task<IResult<IEnumerable<AlimentacaoDTO>>> GetFonteAlimentacao()
         {
-            IResult<IEnumerable<AlimentacaoDTO>> fontesAlimentacao;
+            IEnumerable<AlimentacaoDTO> fontesAlimentacao;
 
-            fontesAlimentacao = await _alimentacaoRepository.GetFonteAlimentacao();
+            fontesAlimentacao = _alimentacaoRepository.GetFonteAlimentacao();
+
+            return (IResult<IEnumerable<AlimentacaoDTO>>)fontesAlimentacao;
         }
     }
 }
