@@ -17,7 +17,7 @@ namespace ProjetoTccEmpresa_API.Controllers
 
         [HttpGet]
         [ProducesResponseType(typeof(IEnumerable<AlimentacaoDTO>), StatusCodes.Status200OK)]
-        public async Task<IActionResult> SearchAlimentacao([FromQuery] IAlimentacaoServices alimentacaoServices)
+        public async Task<IActionResult> SearchAlimentacao([FromServices] IAlimentacaoServices alimentacaoServices)
         {
             IResult<IEnumerable<AlimentacaoDTO>> result = await alimentacaoServices.GetFonteAlimentacao();
 
