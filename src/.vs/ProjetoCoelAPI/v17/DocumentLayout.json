@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\alexa\\OneDrive\\\u00C1rea de Trabalho\\ProjetoCoel\\Api\\src\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9696998F-4706-4628-9AF9-57796D225872}|ProjetoCoelAPI\\ProjetoCoelAPI.csproj|c:\\users\\alexa\\onedrive\\\u00E1rea de trabalho\\projetocoel\\api\\src\\projetocoelapi\\controllers\\projetocoelcontroler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9696998F-4706-4628-9AF9-57796D225872}|ProjetoCoelAPI\\ProjetoCoelAPI.csproj|solutionrelative:projetocoelapi\\controllers\\projetocoelcontroler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB1014BE-A007-4B3A-9DDD-B604F9ED4405}|ProjetoCoelApi.Application\\ProjetoCoelApi.Application.csproj|c:\\users\\alexa\\onedrive\\\u00E1rea de trabalho\\projetocoel\\api\\src\\projetocoelapi.application\\services\\iprojetocoelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB1014BE-A007-4B3A-9DDD-B604F9ED4405}|ProjetoCoelApi.Application\\ProjetoCoelApi.Application.csproj|solutionrelative:projetocoelapi.application\\services\\iprojetocoelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A6A0797-E4E6-4F79-8001-C546AFE82B44}|ProjetoCoelAPI.Infrastructure\\ProjetoCoelAPI.Infrastructure.csproj|c:\\users\\alexa\\onedrive\\\u00E1rea de trabalho\\projetocoel\\api\\src\\projetocoelapi.infrastructure\\service\\projetocoelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A6A0797-E4E6-4F79-8001-C546AFE82B44}|ProjetoCoelAPI.Infrastructure\\ProjetoCoelAPI.Infrastructure.csproj|solutionrelative:projetocoelapi.infrastructure\\service\\projetocoelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProjetoCoelService.cs",
+              "DocumentMoniker": "C:\\Users\\alexa\\OneDrive\\\u00C1rea de Trabalho\\ProjetoCoel\\Api\\src\\ProjetoCoelAPI.Infrastructure\\Service\\ProjetoCoelService.cs",
+              "RelativeDocumentMoniker": "ProjetoCoelAPI.Infrastructure\\Service\\ProjetoCoelService.cs",
+              "ToolTip": "C:\\Users\\alexa\\OneDrive\\\u00C1rea de Trabalho\\ProjetoCoel\\Api\\src\\ProjetoCoelAPI.Infrastructure\\Service\\ProjetoCoelService.cs",
+              "RelativeToolTip": "ProjetoCoelAPI.Infrastructure\\Service\\ProjetoCoelService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T16:54:16.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IProjetoCoelService.cs",
+              "DocumentMoniker": "C:\\Users\\alexa\\OneDrive\\\u00C1rea de Trabalho\\ProjetoCoel\\Api\\src\\ProjetoCoelApi.Application\\Services\\IProjetoCoelService.cs",
+              "RelativeDocumentMoniker": "ProjetoCoelApi.Application\\Services\\IProjetoCoelService.cs",
+              "ToolTip": "C:\\Users\\alexa\\OneDrive\\\u00C1rea de Trabalho\\ProjetoCoel\\Api\\src\\ProjetoCoelApi.Application\\Services\\IProjetoCoelService.cs",
+              "RelativeToolTip": "ProjetoCoelApi.Application\\Services\\IProjetoCoelService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T16:53:55.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProjetoCoelControler.cs",
+              "DocumentMoniker": "C:\\Users\\alexa\\OneDrive\\\u00C1rea de Trabalho\\ProjetoCoel\\Api\\src\\ProjetoCoelAPI\\Controllers\\ProjetoCoelControler.cs",
+              "RelativeDocumentMoniker": "ProjetoCoelAPI\\Controllers\\ProjetoCoelControler.cs",
+              "ToolTip": "C:\\Users\\alexa\\OneDrive\\\u00C1rea de Trabalho\\ProjetoCoel\\Api\\src\\ProjetoCoelAPI\\Controllers\\ProjetoCoelControler.cs",
+              "RelativeToolTip": "ProjetoCoelAPI\\Controllers\\ProjetoCoelControler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T16:12:38.742Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

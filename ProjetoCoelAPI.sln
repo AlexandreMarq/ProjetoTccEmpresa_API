@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36623.8
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoCoelAPI", "src\ProjetoCoelAPI\ProjetoCoelAPI.csproj", "{9696998F-4706-4628-9AF9-57796D225872}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Application", "01 - Application", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 - Domain", "02 - Domain", "{6940CAA2-8937-4EA9-8A05-CB6A2D76EC75}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - Infrastructure", "03 - Infrastructure", "{596C1524-28AC-4DEE-A8F5-9523FD1938EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoCoelAPI.Domain", "src\ProjetoCoelAPI.Domain\ProjetoCoelAPI.Domain.csproj", "{AFA0D27B-2D49-402C-98E8-F4DA45170752}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoCoelAPI.Infrastructure", "src\ProjetoCoelAPI.Infrastructure\ProjetoCoelAPI.Infrastructure.csproj", "{8A6A0797-E4E6-4F79-8001-C546AFE82B44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoCoelApi.Application", "src\ProjetoCoelApi.Application\ProjetoCoelApi.Application.csproj", "{DB1014BE-A007-4B3A-9DDD-B604F9ED4405}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9696998F-4706-4628-9AF9-57796D225872}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9696998F-4706-4628-9AF9-57796D225872}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9696998F-4706-4628-9AF9-57796D225872}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9696998F-4706-4628-9AF9-57796D225872}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFA0D27B-2D49-402C-98E8-F4DA45170752}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFA0D27B-2D49-402C-98E8-F4DA45170752}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFA0D27B-2D49-402C-98E8-F4DA45170752}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFA0D27B-2D49-402C-98E8-F4DA45170752}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A6A0797-E4E6-4F79-8001-C546AFE82B44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A6A0797-E4E6-4F79-8001-C546AFE82B44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A6A0797-E4E6-4F79-8001-C546AFE82B44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A6A0797-E4E6-4F79-8001-C546AFE82B44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB1014BE-A007-4B3A-9DDD-B604F9ED4405}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB1014BE-A007-4B3A-9DDD-B604F9ED4405}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB1014BE-A007-4B3A-9DDD-B604F9ED4405}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB1014BE-A007-4B3A-9DDD-B604F9ED4405}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AFA0D27B-2D49-402C-98E8-F4DA45170752} = {6940CAA2-8937-4EA9-8A05-CB6A2D76EC75}
+		{8A6A0797-E4E6-4F79-8001-C546AFE82B44} = {596C1524-28AC-4DEE-A8F5-9523FD1938EB}
+		{DB1014BE-A007-4B3A-9DDD-B604F9ED4405} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B86A90F8-DE38-4854-BE58-906B8F2CACB4}
+	EndGlobalSection
+EndGlobal
