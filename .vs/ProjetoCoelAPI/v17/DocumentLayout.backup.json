@@ -1,12 +1,72 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\alexa\\OneDrive\\Documentos\\Git\\ProjetoTccEmpresa_API\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8A6A0797-E4E6-4F79-8001-C546AFE82B44}|src\\ProjetoCoelAPI.Infrastructure\\ProjetoCoelAPI.Infrastructure.csproj|c:\\users\\alexa\\onedrive\\documentos\\git\\projetotccempresa_api\\src\\projetocoelapi.infrastructure\\service\\projetocoelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A6A0797-E4E6-4F79-8001-C546AFE82B44}|src\\ProjetoCoelAPI.Infrastructure\\ProjetoCoelAPI.Infrastructure.csproj|solutionrelative:src\\projetocoelapi.infrastructure\\service\\projetocoelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A6A0797-E4E6-4F79-8001-C546AFE82B44}|src\\ProjetoCoelAPI.Infrastructure\\ProjetoCoelAPI.Infrastructure.csproj|c:\\users\\alexa\\onedrive\\documentos\\git\\projetotccempresa_api\\src\\projetocoelapi.infrastructure\\projetocoelapi.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8A6A0797-E4E6-4F79-8001-C546AFE82B44}|src\\ProjetoCoelAPI.Infrastructure\\ProjetoCoelAPI.Infrastructure.csproj|solutionrelative:src\\projetocoelapi.infrastructure\\projetocoelapi.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB1014BE-A007-4B3A-9DDD-B604F9ED4405}|src\\ProjetoCoelApi.Application\\ProjetoCoelApi.Application.csproj|c:\\users\\alexa\\onedrive\\documentos\\git\\projetotccempresa_api\\src\\projetocoelapi.application\\services\\iprojetocoelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB1014BE-A007-4B3A-9DDD-B604F9ED4405}|src\\ProjetoCoelApi.Application\\ProjetoCoelApi.Application.csproj|solutionrelative:src\\projetocoelapi.application\\services\\iprojetocoelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IProjetoCoelService.cs",
+              "DocumentMoniker": "C:\\Users\\alexa\\OneDrive\\Documentos\\Git\\ProjetoTccEmpresa_API\\src\\ProjetoCoelApi.Application\\Services\\IProjetoCoelService.cs",
+              "RelativeDocumentMoniker": "src\\ProjetoCoelApi.Application\\Services\\IProjetoCoelService.cs",
+              "ToolTip": "C:\\Users\\alexa\\OneDrive\\Documentos\\Git\\ProjetoTccEmpresa_API\\src\\ProjetoCoelApi.Application\\Services\\IProjetoCoelService.cs",
+              "RelativeToolTip": "src\\ProjetoCoelApi.Application\\Services\\IProjetoCoelService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T12:42:11.009Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProjetoCoelService.cs",
+              "DocumentMoniker": "C:\\Users\\alexa\\OneDrive\\Documentos\\Git\\ProjetoTccEmpresa_API\\src\\ProjetoCoelAPI.Infrastructure\\Service\\ProjetoCoelService.cs",
+              "RelativeDocumentMoniker": "src\\ProjetoCoelAPI.Infrastructure\\Service\\ProjetoCoelService.cs",
+              "ToolTip": "C:\\Users\\alexa\\OneDrive\\Documentos\\Git\\ProjetoTccEmpresa_API\\src\\ProjetoCoelAPI.Infrastructure\\Service\\ProjetoCoelService.cs",
+              "RelativeToolTip": "src\\ProjetoCoelAPI.Infrastructure\\Service\\ProjetoCoelService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T12:35:57.305Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProjetoCoelAPI.Infrastructure.csproj",
+              "DocumentMoniker": "C:\\Users\\alexa\\OneDrive\\Documentos\\Git\\ProjetoTccEmpresa_API\\src\\ProjetoCoelAPI.Infrastructure\\ProjetoCoelAPI.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "src\\ProjetoCoelAPI.Infrastructure\\ProjetoCoelAPI.Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\alexa\\OneDrive\\Documentos\\Git\\ProjetoTccEmpresa_API\\src\\ProjetoCoelAPI.Infrastructure\\ProjetoCoelAPI.Infrastructure.csproj",
+              "RelativeToolTip": "src\\ProjetoCoelAPI.Infrastructure\\ProjetoCoelAPI.Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-10T13:35:23.583Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

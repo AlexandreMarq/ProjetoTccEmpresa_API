@@ -6,4 +6,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  
+
+  <ItemGroup>
+    <ProjectReference Include="..\ProjetoCoelAPI.Infrastructure\ProjetoCoelAPI.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
