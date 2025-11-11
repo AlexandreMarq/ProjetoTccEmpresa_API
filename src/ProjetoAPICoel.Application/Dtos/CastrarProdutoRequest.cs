@@ -19,7 +19,5 @@
         public int AlimentacaoProduto { get; set; }
         public int CodManualProduto { get; set; }
         public int CategoriaVenda { get; set; }
-        public DateTime DataCriacao { get; set; }
-        public DateTime DataAtulizacao { get; set; }
     }
 }

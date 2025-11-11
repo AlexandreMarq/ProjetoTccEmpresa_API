@@ -118,8 +118,8 @@ namespace ProjetoAPICoel.Infrastructure.Service
                     new SqlParameter("@AlimentacaoProduto", produto.AlimentacaoProduto),
                     new SqlParameter("@CodManualProduto", produto.CodManualProduto),
                     new SqlParameter("@CategoriaVenda", produto.CategoriaVenda),
-                    new SqlParameter("@DataCriacao", produto.DataCriacao),
-                    new SqlParameter("@DataAtulizacao", produto.DataAtulizacao)
+                    new SqlParameter("@DataCriacao", DateTime.Now),
+                    new SqlParameter("@DataAtulizacao", DateTime.Now)
                 });
 
             return rows;
@@ -170,7 +170,24 @@ namespace ProjetoAPICoel.Infrastructure.Service
                     new SqlParameter("@AlimentacaoProduto", produto.AlimentacaoProduto),
                     new SqlParameter("@CodManualProduto", produto.CodManualProduto),
                     new SqlParameter("@CategoriaVenda", produto.CategoriaVenda),
-                    new SqlParameter("@DataAtulizacao", produto.DataAtulizacao)
+                    new SqlParameter("@DataAtulizacao", DateTime.Now)
+                });
+
+            return rows;
+        }
+
+        public async Task<int> DesabilitaProdutoAsync(DesabilitarProdutoRequest produto)
+        {
+            var _query = $@"
+                    UPDATE Produtos SET StatusProduto = @StatusProduto, DataAtulizacao = @DataAtulizacao WHERE IdProduto = @IdProduto     
+            ";
+
+            var rows = await _context.Database.ExecuteSqlRawAsync(_query
+                , new[]
+                {
+                    new SqlParameter("@IdProduto", produto.IdProduto),
+                    new SqlParameter("@StatusProduto", produto.StatusProduto),
+                    new SqlParameter("@DataAtulizacao", DateTime.Now)
                 });
 
             return rows;

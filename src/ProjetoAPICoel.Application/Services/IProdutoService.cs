@@ -8,5 +8,6 @@ namespace ProjetoAPICoel.Application.Services
         Task<List<ProdutoDto>> BuscarProdutoPorIDAsync(BuscarProdutoIdRequest resquest);
         Task<int> CadastraProdutoAsync(CastrarProdutoRequest resquest);
         Task<int> AtualizaProdutoIdAsync(AtualizarProdutoRequest resquest);
+        Task<int> DesabilitaProdutoAsync(DesabilitarProdutoRequest request);
     }
 }

@@ -61,13 +61,24 @@ namespace ProjetoCoelAPI.Controllers
             if (retorno > 0)
                 return BadRequest("Erro ao Alterar Produto");
 
-            return Ok();
+            return Ok("Produto Atualizado com sucesso");
         }
 
-        [HttpPost("DesabilitaProduto")]
+        [HttpPost("ExcluiProduto")]
         public async Task<IActionResult> DesabilitaProduto([FromQuery] DesabilitarProdutoRequest request)
         {
-            return Ok();
+            var validator = new DesabilitarProdutoValidator();
+            var result = validator.Validate(request);
+
+            if (!result.IsValid)
+                return BadRequest(result.Errors);
+
+            var retorno = await _service.DesabilitaProdutoAsync(request);
+
+            if (retorno > 0)
+                return BadRequest("Erro ao Excluir Produto");
+
+            return Ok("Produto Excluido com sucesso");
         }
     }
 }
