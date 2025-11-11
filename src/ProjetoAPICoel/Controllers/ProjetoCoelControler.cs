@@ -50,6 +50,17 @@ namespace ProjetoCoelAPI.Controllers
         [HttpPost("AtualizaProduto")]
         public async Task<IActionResult> AtualizaProduto([FromQuery] AtualizarProdutoRequest request)
         {
+            var validator = new AtualizarProdutoValidator();
+            var result = validator.Validate(request);
+
+            if (!result.IsValid)
+                return BadRequest(result.Errors);
+
+            var retorno = await _service.AtualizaProdutoIdAsync(request);
+
+            if (retorno > 0)
+                return BadRequest("Erro ao Alterar Produto");
+
             return Ok();
         }
 
