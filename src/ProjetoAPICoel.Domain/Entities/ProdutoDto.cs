@@ -9,7 +9,7 @@ namespace ProjetoAPICoel.Domain.Entities
         public string? ModeloProduto { get; set; }
         public string? DescricaoReduzidaProduto { get; set; }
         public string? DescricaoCompletaProduto { get; set; }
-        public int StatusProduto { get; set; }
+        public bool StatusProduto { get; set; }
         public string? LinkProdutoSite { get; set; }
         public string? ParemetrosProduto { get; set; }
         public string? AlarmesProduto { get; set; }
