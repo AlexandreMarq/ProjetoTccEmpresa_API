@@ -27,11 +27,16 @@ namespace ProjetoCoelAPI.Controllers
 
             var retorno = await _service.BuscarProdutoPorIDAsync(request);
 
+            if (retorno.Count == 0)
+            {
+                return NotFound("Nenhum produto encontrado");
+            }
+
             return Ok(retorno);
         }
 
         [HttpPost("CadastraProduto")]
-        public async Task<IActionResult> CastraProduto([FromQuery] CastrarProdutoRequest request)
+        public async Task<IActionResult> CastraProduto([FromBody] CastrarProdutoRequest request)
         {
             var validator = new CastrarProdutoValidator();
             var result = validator.Validate(request);
@@ -41,14 +46,14 @@ namespace ProjetoCoelAPI.Controllers
 
             var retorno = await _service.CadastraProdutoAsync(request);
 
-            if (retorno > 0)
+            if (retorno == 0)
                 return BadRequest("Erro ao Cadastrar Produto");
 
             return Ok("Produto cadastrado com sucesso");
         }
 
         [HttpPost("AtualizaProduto")]
-        public async Task<IActionResult> AtualizaProduto([FromQuery] AtualizarProdutoRequest request)
+        public async Task<IActionResult> AtualizaProduto([FromBody] AtualizarProdutoRequest request)
         {
             var validator = new AtualizarProdutoValidator();
             var result = validator.Validate(request);
@@ -58,7 +63,7 @@ namespace ProjetoCoelAPI.Controllers
 
             var retorno = await _service.AtualizaProdutoIdAsync(request);
 
-            if (retorno > 0)
+            if (retorno == 0)
                 return BadRequest("Erro ao Alterar Produto");
 
             return Ok("Produto Atualizado com sucesso");
@@ -75,7 +80,7 @@ namespace ProjetoCoelAPI.Controllers
 
             var retorno = await _service.DesabilitaProdutoAsync(request);
 
-            if (retorno > 0)
+            if (retorno == 0)
                 return BadRequest("Erro ao Excluir Produto");
 
             return Ok("Produto Excluido com sucesso");

@@ -24,6 +24,7 @@ namespace ProjetoAPICoel.Infrastructure.Service
             var idProduto = string.Join(",", request.IdProduto.Select(p => $"{p}"));
             var filtroProduto = $" IdProduto IN ({idProduto})";
             var _query = $@" 
+                USE ProjetoCoel
                 SELECT IdProduto
                         ,ModeloProduto
                         ,DescricaoReduzidaProduto
@@ -45,7 +46,7 @@ namespace ProjetoAPICoel.Infrastructure.Service
                         ,DataCriacao 
                         ,DataAtulizacao
                 FROM Produtos(NOLOCK)
-                WHERE {filtroProduto}
+                WHERE {filtroProduto} AND StatusProduto = 1
             ";
 
             return await _context.Set<ProdutoDto>().FromSqlRaw(_query).ToListAsync();
@@ -55,47 +56,51 @@ namespace ProjetoAPICoel.Infrastructure.Service
         {
 
             var _query = $@"
-                INSERT INTO [dbo].[Produtos]
-                           ([ModeloProduto]
-                           ,[DescricaoReduzidaProduto]
-                           ,[DescricaoCompletaProduto]
-                           ,[StatusProduto]
-                           ,[LinkProdutoSite]
-                           ,[ParemetrosProduto]
-                           ,[AlarmesProduto]
-                           ,[EsquemaLigacaoProduto]
-                           ,[LinkExemploLigacao]
-                           ,[DimencoesProduto]
-                           ,[CodFotoProduto]
-                           ,[IdFuncaoProduto]
-                           ,[IdCategoriaProduto]
-                           ,[CertificadoProduto]
-                           ,[AlimentacaoProduto]
-                           ,[CodManualProduto]
-                           ,[CategoriaVenda]
-                           ,[DataCriacao]
-                           ,[DataAtulizacao])
-                        VALUES (
-                            , @ModeloProduto
-                            , @DescricaoReduzidaProduto
-                            , @DescricaoCompletaProduto
-                            , @StatusProduto
-                            , @LinkProdutoSite
-                            , @ParemetrosProduto
-                            , @AlarmesProduto
-                            , @EsquemaLigacaoProduto
-                            , @LinkExemploLigacao
-                            , @DimencoesProduto
-                            , @CodFotoProduto
-                            , @IdFuncaoProduto
-                            , @IdCategoriaProduto
-                            , @CertificadoProduto
-                            , @AlimentacaoProduto
-                            , @CodManualProduto
-                            , @CategoriaVenda
-                            , @DataCriacao
-                            , @DataAtulizacao
-                        );
+                USE ProjetoCoel
+                INSERT INTO Produtos
+                            (
+                                [ModeloProduto],
+                                [DescricaoReduzidaProduto],
+                                [DescricaoCompletaProduto],
+                                [StatusProduto],
+                                [LinkProdutoSite],
+                                [ParemetrosProduto],
+                                [AlarmesProduto],
+                                [EsquemaLigacaoProduto],
+                                [LinkExemploLigacao],
+                                [DimencoesProduto],
+                                [CodFotoProduto],
+                                [IdFuncaoProduto],
+                                [IdCategoriaProduto],
+                                [CertificadoProduto],
+                                [AlimentacaoProduto],
+                                [CodManualProduto],
+                                [CategoriaVenda],
+                                [DataCriacao],
+                                [DataAtulizacao]
+                            )
+                            VALUES
+                            (
+                                @ModeloProduto,
+                                @DescricaoReduzidaProduto,
+                                @DescricaoCompletaProduto,
+                                @StatusProduto,
+                                @LinkProdutoSite,
+                                @ParemetrosProduto,
+                                @AlarmesProduto,
+                                @EsquemaLigacaoProduto,
+                                @LinkExemploLigacao,
+                                @DimencoesProduto,
+                                @CodFotoProduto,
+                                @IdFuncaoProduto,
+                                @IdCategoriaProduto,
+                                @CertificadoProduto,
+                                @AlimentacaoProduto,
+                                @CodManualProduto,
+                                @CategoriaVenda,
+                                @DataCriacao,
+                                @DataAtulizacao
+                            );
             ";
 
             var rows = await _context.Database.ExecuteSqlRawAsync(_query
@@ -128,6 +133,7 @@ namespace ProjetoAPICoel.Infrastructure.Service
         public async Task<int> AtualizaProdutoIdAsync(AtualizarProdutoRequest produto)
         {
             var _query = $@"
+                    USE ProjetoCoel
                     UPDATE Produtos SET ModeloProduto = @ModeloProduto
                                         , DescricaoReduzidaProduto = @DescricaoReduzidaProduto
                                         , DescricaoCompletaProduto = @DescricaoCompletaProduto
@@ -179,6 +185,7 @@ namespace ProjetoAPICoel.Infrastructure.Service
         public async Task<int> DesabilitaProdutoAsync(DesabilitarProdutoRequest produto)
         {
             var _query = $@"
+                    USE ProjetoCoel
                     UPDATE Produtos SET StatusProduto = @StatusProduto, DataAtulizacao = @DataAtulizacao WHERE IdProduto = @IdProduto     
             ";
 
@@ -186,7 +193,7 @@ namespace ProjetoAPICoel.Infrastructure.Service
                 , new[]
                 {
                     new SqlParameter("@IdProduto", produto.IdProduto),
-                    new SqlParameter("@StatusProduto", produto.StatusProduto),
+                    new SqlParameter("@StatusProduto", false),
                     new SqlParameter("@DataAtulizacao", DateTime.Now)
                 });
 

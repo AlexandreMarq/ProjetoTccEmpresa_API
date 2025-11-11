@@ -1,6 +1,8 @@
+using Microsoft.EntityFrameworkCore;
 using OpenTelemetry.Resources;
 using OpenTelemetry.Trace;
 using ProjetoAPICoel.Application.Services;
+using ProjetoAPICoel.Infrastructure.Data;
 using ProjetoAPICoel.Infrastructure.Service;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,14 +16,14 @@ builder.Services.AddOpenTelemetry()
             .AddHttpClientInstrumentation();
     });
 
-//builder.Services.AddDbContextPool<AppContext>(options =>
-//    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddDbContextPool<AppDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // Add services to the container.
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-//builder.Services.AddScoped<IProdutoService, ProdutoService>();
+builder.Services.AddScoped<IProdutoService, ProdutoService>();
 builder.Services.AddHttpClient();
 
 var app = builder.Build();

@@ -13,7 +13,6 @@ namespace ProjetoAPICoel.Application.Validators
         private void ValidaCampoObrigatorio()
         {
             RuleFor(x => x.IdProduto).NotEmpty().WithMessage("Necessario informar Id do Produto");
-            RuleFor(x => x.StatusProduto).NotEmpty().WithMessage("Necessario informar StatusProduto do Produto");
         }
     }
 }
